@@ -1,6 +1,8 @@
 # pxt-snake-game, Gra w Snake
 
 <IMG SRC="https://github.com/agrabara/pxt-snake-game/blob/master/snake.png?raw=true"><BR>
+  
+Sumulator -> https://makecode.microbit.org/_7bo1khKKRW8b <BR>
 
 ## TODO
 [X] generowanie owoców poza ciałem węża <BR>
