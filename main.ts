@@ -28,6 +28,22 @@ input.onButtonPressed(Button.B, function () {
         DirY = 0
     }
 })
+
+
+/**
+ * Gra z czwartych, piątych i szóstych zajęć CoderDojo-Micto:bit 
+ * zdalnie 2020.05.02, 2020.05.09, 2020.05.16 obecni: Michalina, Maks, Rafał, Michał
+ * 
+ * SNAKE
+ * 
+ * 1. sterowanie wężem A/B - skręca w lewo/prawo 
+ * 2. zjada owoce aby rosnąć
+ * 3. super owoc - migający skraca węża ale przyspiesza poruszanie
+ * 4. nie ugryź węża (sam siebie)
+ * 4. nie uciekaj z planszy 
+ * 5. liczymy ile zjadłeś owoców
+ * 
+*/
 let newy = 0
 let newx = 0
 let jeszczeraz = 0
@@ -37,6 +53,8 @@ let GlowaX = 0
 let Cialo: game.LedSprite[] = []
 let DirX = 0
 let DirY = 0
+basic.showString("Snake")
+basic.pause(500)
 DirY = 0
 DirX = 1
 let Owoc = game.createSprite(4, 4)
@@ -102,4 +120,3 @@ basic.forever(function () {
     }
     basic.pause(pauza)
 })
- 
