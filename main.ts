@@ -42,6 +42,7 @@ DirX = 1
 let Owoc = game.createSprite(4, 4)
 Owoc.set(LedSpriteProperty.Brightness, 100)
 Cialo.insertAt(0, game.createSprite(GlowaX, GlowaY))
+let pauza = 750
 basic.forever(function () {
     if (GlowaX == 4 && DirX == 1) {
         game.setScore(wynik)
@@ -77,6 +78,17 @@ basic.forever(function () {
                 }
             }
         }
+        if (Owoc.get(LedSpriteProperty.Blink) == 100) {
+            if (Cialo.length > 1) {
+                Cialo.pop().delete()
+            }
+            if (Cialo.length > 1) {
+                Cialo.pop().delete()
+            }
+            if (pauza > 50) {
+                pauza += -50
+            }
+        }
         Owoc.set(LedSpriteProperty.X, newx)
         Owoc.set(LedSpriteProperty.Y, newy)
         wynik += 1
@@ -88,6 +100,6 @@ basic.forever(function () {
     } else {
         Cialo.pop().delete()
     }
-    basic.pause(750)
+    basic.pause(pauza)
 })
  
