@@ -3,6 +3,7 @@
 <IMG SRC="https://github.com/agrabara/pxt-snake-game/blob/master/snake.png?raw=true"><BR>
   
 Sumulator -> https://makecode.microbit.org/_7bo1khKKRW8b <BR>
+Film ->   https://www.youtube.com/watch?v=r90Xyhe7YW8 <BR>
 
 ## TODO
 [X] generowanie owoców poza ciałem węża <BR>
